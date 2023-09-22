@@ -14,6 +14,7 @@ FILE* ft;
 void choice(void);
 char New();
 char files(char);
+void search();
 
 int main() {
 	while(1){
@@ -66,4 +67,27 @@ char New() {
     return 0;
 }
 
+void search()
+{
+	unsigned int number;
+	unsigned char ch;
+	product_details();	
+	scanf("%d",number);
+	printf("\nTHE PRODUCT IS => ");
+	ch=getch();
+	if(ch=='13')
+	{
+		printf("\nSEARCHING.........................");
+		
+	}
+	else 
+	{
+     product_details();		
+	}
+}	
 
+int product_details()
+{
+	printf("\nENTER THE PRODUCT NO\n");
+	return 0;
+}
